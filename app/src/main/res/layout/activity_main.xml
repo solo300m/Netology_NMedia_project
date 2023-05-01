@@ -83,7 +83,7 @@
         app:layout_constraintBottom_toBottomOf="@id/context"
         />
     <ImageButton
-        android:id="@+id/sharedImg"
+        android:id="@+id/viewButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="@dimen/margin13"
@@ -91,19 +91,19 @@
         android:background="@android:color/transparent"
         app:layout_constraintTop_toBottomOf="@id/barrierTextBottom"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintEnd_toStartOf="@id/shared"
+        app:layout_constraintEnd_toStartOf="@id/view"
         android:layout_marginTop="@dimen/margin16"
         android:contentDescription="@string/share"
         />
     <TextView
-        android:id="@+id/shared"
+        android:id="@+id/view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin13"
         android:layout_marginEnd="@dimen/margin13"
         tools:text="@sample/post.json/data/shared"
-        app:layout_constraintTop_toTopOf="@id/sharedImg"
-        app:layout_constraintBottom_toBottomOf="@id/sharedImg"
+        app:layout_constraintTop_toTopOf="@id/viewButton"
+        app:layout_constraintBottom_toBottomOf="@id/viewButton"
         app:layout_constraintEnd_toEndOf="parent"
         />
     <ImageButton
@@ -127,7 +127,7 @@
         app:layout_constraintBottom_toBottomOf="@id/likeButton"
         />
     <ImageButton
-        android:id="@+id/viewButton"
+        android:id="@+id/sharedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_share_24"
@@ -138,12 +138,13 @@
         android:contentDescription="@string/view"
         />
     <TextView
+        android:id="@+id/shared"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="@sample/post.json/data/view"
-        app:layout_constraintTop_toTopOf="@id/viewButton"
-        app:layout_constraintBottom_toBottomOf="@id/viewButton"
-        app:layout_constraintStart_toEndOf="@id/viewButton"
+        app:layout_constraintTop_toTopOf="@id/sharedButton"
+        app:layout_constraintBottom_toBottomOf="@id/sharedButton"
+        app:layout_constraintStart_toEndOf="@id/sharedButton"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
