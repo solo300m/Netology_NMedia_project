@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
                 likeButton.setImageResource(
                     if(post.likedByMe) R.drawable.baseline_favorite_full_24 else R.drawable.is_baseline_favorite_border_24
                 )
-                like.text = post.intToString(post.likes);
-                shared.text = post.intToString(post.shared);
-                view.text = post.intToString(post.view);
+                like.text = Post.intToString(post.likes);
+                shared.text = Post.intToString(post.shared);
+                view.text = Post.intToString(post.view);
 
 
             }
@@ -50,54 +50,5 @@ class MainActivity : AppCompatActivity() {
         binding.likeButton.setOnClickListener{
             viewModel.like()
         }
-//        var post = Post(
-//            id = 1,
-//            author = "Нетология. Университет интернет-профессий",
-//            published = "21 мая в 18:30",
-//            content = "Привет, это новая Нетология! Когда-то " +
-//                    "Нетология насиналась с интенсивов по онлайн-маркетингу. " +
-//                    "Затем появились курсы по дизайну, разработке аналитике и управлению. " +
-//                    "Мы растем сами и помогаем расти студентам: от новичков до уверенных профессионалов. " +
-//                    "Но самое важное остается с нами: мы верим, что в каждом уже есть сила, которая заставляет хотеть больше, " +
-//                    "целиться выше, бежать быстрее. Наша миссия - помочь встать на путь роста и начать цепочку перемен - " +
-//                    "https://netology.gy/fyb.",
-//            likes = 999999,
-//            likedByMe = false,
-//            shared = 999,
-//            view = 999999
-//        );
-//        with(binding) {
-//            author.text = post.author;
-//            published.text = post.published;
-//            context.text = post.content;
-//            if (post.likedByMe) {
-//                likeButton?.setImageResource(R.drawable.baseline_favorite_full_24);
-//            } else {
-//                likeButton?.setImageResource(R.drawable.is_baseline_favorite_border_24);
-//            }
-//            like.text = post.intToString(post.likes);
-//            shared.text = post.intToString(post.shared);
-//            view.text = post.intToString(post.view);
-//
-//            likeButton.setOnClickListener {
-//                post.likedByMe = !post.likedByMe;
-//                likeButton.setImageResource(
-//                    if (post.likedByMe) R.drawable.baseline_favorite_full_24 else R.drawable.is_baseline_favorite_border_24
-//                )
-//                if (post.likedByMe) post.likes++ else post.likes--
-//                // like.text = post.likes.toString();
-//                like.text = post.intToString(post.likes);
-//            };
-//
-//            sharedButton.setOnClickListener{
-//                post.shared++;
-//                shared.text = post.intToString(post.shared);
-//            };
-//
-//            viewButton.setOnClickListener{
-//                post.view++;
-//                view.text = post.intToString(post.view);
-//            };
-//        };
     };
 };
