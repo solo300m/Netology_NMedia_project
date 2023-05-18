@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name" translatable="false">NMedia</string>
     <string name="unboard">NMedia!</string>
+    <string name="more_menu">menu</string>
+    <string name="post_avatar" >post-avatar</string>
+    <string name="like">like</string>
+    <string name="view">view</string>
+    <string name="share">share</string>
 </resources>

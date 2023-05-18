@@ -2,4 +2,9 @@
 <resources>
     <string name="app_name">NMedia</string>
     <string name="unboard">Н-Медиа!</string>
+    <string name="more_menu">меню</string>
+    <string name="post_avatar">аватар поста</string>
+    <string name="like">лайки</string>
+    <string name="view">просмотры</string>
+    <string name="share">скачивания</string>
 </resources>
