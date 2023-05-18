@@ -17,12 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         val binding: ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater);
         setContentView(binding.root);
-        binding.root.setOnClickListener{
-            Log.d("MainActivity", "сработал обработчик на Root");
-        }
-        binding.imageView.setOnClickListener{
-            Log.d("MainActivity", "сработал обработчик на Avatar");
-        }
+
 
         var post = Post(
             id = 1,
